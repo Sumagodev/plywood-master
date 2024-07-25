@@ -9,6 +9,7 @@ import ScrollTop from "../components/Utility/ScrollTop";
 import { removeToken } from "../services/User.service";
 import { routes } from "./routes";
 export default function RootRoute() {
+  
   const navigate = useNavigate();
   const isAuthorized = useSelector((state) => state.auth.isAuthorized);
   const authToken = useSelector((state) => state.auth.token)
